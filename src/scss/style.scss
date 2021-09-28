@@ -1,0 +1,121 @@
+@import './styleHelpers.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  color: $MainColor;
+  font-family: Calibri, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  resize: none;
+  outline: none;
+  padding: 10px 14px;
+}
+
+.app {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.login {
+  max-width: 600px;
+  margin: auto;
+
+  &__error {
+    text-align: right;
+    font-size: 24px;
+    font-weight: 700;
+    color: $Color2;
+  }
+}
+
+.chat {
+  max-width: 800px;
+  margin: auto;
+
+  &__title {
+    display: inline-block;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__users {
+    width: 30%;
+  }
+
+  &__board {
+    width: 70%;
+  }
+
+  &__messages {
+    margin-bottom: 20px;
+  }
+
+  &__message {
+    padding: 8px;
+  }
+
+  &__user {
+    padding: 12px;
+    cursor: pointer;
+  }
+}
+
+.you {
+  color: $Color2;
+  font-weight: 700;
+}
+
+.your {
+  text-align: right;
+  color: $Color2;
+}
+
+.btn {
+  padding: 8px 20px;
+  border: 1px solid $Color3;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+
+  &.chat__btn {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+  }
+
+  &.login__btn {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+  }
+
+  &.chat__logout {
+    margin-left: 40px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}

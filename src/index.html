@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="login">
+        <div class="login__content">
+          <h1 class="login__title">Введите никнейм</h1>
+          <form class="login__form">
+            <input
+              class="login__input"
+              type="text"
+              name="username"
+              placeholder="Ваш никнейм"
+            />
+            <div class="login__btns">
+              <button class="login__btn btn" type="submit">Продолжить</button>
+            </div>
+          </form>
+          <div class="login__error"></div>
+        </div>
+      </div>
+      <div class="chat hidden">
+        <h2 class="chat__title">Hello</h2>
+        <button class="chat__logout btn">Выйти</button>
+        <div class="chat__content">
+          <div class="chat__users"></div>
+          <div class="chat__board">
+            <div class="chat__messages-list"></div>
+            <form class="chat__form">
+              <input
+                class="chat__input"
+                type="text"
+                name="message"
+                placeholder="Введите сообщение..."
+              />
+              <div class="chat__btns">
+                <button class="chat__btn btn" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
