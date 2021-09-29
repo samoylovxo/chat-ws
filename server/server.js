@@ -60,4 +60,6 @@ wsServer.on('connection', (ws) => {
   ws.send(JSON.stringify(db), errCallback);
 });
 
-server.listen(7000);
+const port = process.env.PORT || 7070;
+
+server.listen(port);
