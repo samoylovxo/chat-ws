@@ -10,7 +10,7 @@ export class ChatApp {
       this.element = document.querySelector(element);
     }
     this.api = new Api(url);
-    this.ws = new WebSocket('ws://chat-ws-serverside.herokuapp.com/ws');
+    this.ws = new WebSocket('wss://chat-ws-serverside.herokuapp.com/ws');
     this.you = null;
 
     // Elements
