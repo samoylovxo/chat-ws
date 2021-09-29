@@ -16,6 +16,9 @@
     "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json",
     "deploy": "gh-pages -d dist"
   },
+  "engines": {
+    "node": "11.x"
+  },
   "browserslist": "> 0.25%, not dead",
   "keywords": [],
   "author": "samoylovxo",

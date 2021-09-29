@@ -1,4 +1,4 @@
 import { ChatApp } from './components/ChatApp';
 
-const chatApp = new ChatApp('.app', 'http://localhost:7000');
+const chatApp = new ChatApp('.app', 'https://chat-ws-serverside.herokuapp.com');
 window.chatApp = chatApp;
